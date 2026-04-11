@@ -1,0 +1,3015 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Lai Châu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./logo lai châu/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <header class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Lai Châu!</p>
+    </header>
+
+    <header class="w3-top">
+      <nav class="w3-bar w3-white w3-padding w3-card">
+        <a href="#home" class="w3-bar-item neon-box">Lai Châu</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoilaichau/"
+              >TRÒ CHƠI</a
+            >
+          </li>
+        </ul>
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+        <aside
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <menu class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoilaichau/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </menu>
+        </aside>
+      </nav>
+
+      <script>
+        const menuScroll = document.querySelector(".menu-scroll");
+        const btnLeft = document.querySelector(".left-btn");
+        const btnRight = document.querySelector(".right-btn");
+        const step = 200;
+        btnRight.addEventListener("click", () => {
+          menuScroll.scrollLeft += step;
+        });
+        btnLeft.addEventListener("click", () => {
+          menuScroll.scrollLeft -= step;
+        });
+      </script>
+    </header>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <h1 class="w3-center" style="color: red; font-size: 35px">
+          LỊCH SỬ HÌNH THÀNH
+        </h1>
+        <p>
+          <strong
+            ><mark
+              >1. Thời kỳ phong kiến và đầu thời Pháp thuộc (trước 1893 –
+              1909)</mark
+            ></strong
+          ><br />
+          Xưa kia, vùng đất Lai Châu, còn gọi là Mường Lai, nằm dưới quyền quản
+          lý của các tù trưởng người Thái, nhưng vẫn quy phục triều đình Việt
+          Nam. Đây vốn là một phần của phủ Điện Biên, tỉnh Hưng Hóa. Đầu thời
+          Pháp thuộc, năm <u>1893</u>, Toàn quyền Đông Dương thành lập Tiểu quân
+          khu phụ Lai Châu gồm các châu Lai (trung tâm thị xã Mường Lay), Luân
+          (Tủa Chùa), Quỳnh Nhai, và Phong Thổ. Đến năm <u>1895</u>, tiểu quân
+          khu này trực thuộc tỉnh Vạn Bú, sau đổi thành tỉnh Sơn La năm
+          <u>1904</u>, nên Lai Châu thuộc tỉnh Sơn La.
+        </p>
+
+        <p>
+          <strong
+            ><mark
+              >2. Thành lập tỉnh Lai Châu dưới thời Pháp (1909 – 1915)</mark
+            ></strong
+          ><br />
+          Ngày <u>28/6/1909</u>, Toàn quyền Đông Dương ra nghị định thành lập
+          tỉnh Lai Châu, gồm các châu Lai, Quỳnh Nhai, Điện Biên, tách ra từ
+          tỉnh Sơn La. Tỉnh lỵ đặt tại thị xã Lai Châu (nay là Mường Lay, Điện
+          Biên). Công sứ E. Gilles là người quản lý đầu tiên. Tuy nhiên, đến
+          ngày <u>16/1/1915</u>, tỉnh Lai Châu bị bãi bỏ và thay thế bằng Đạo
+          Quan binh 4 Lai Châu, đặt dưới sự cai trị quân sự của Pháp.
+        </p>
+
+        <p>
+          <strong
+            ><mark
+              >3. Giai đoạn 1948–1955: Khu tự trị và thời kỳ chiến tranh</mark
+            ></strong
+          ><br />
+          Năm <u>1948</u>, Lai Châu thuộc Khu tự trị Thái trong Liên bang Đông
+          Dương. Đến năm <u>1950</u>, khu vực này được sáp nhập vào Hoàng triều
+          Cương thổ dưới quyền Quốc trưởng Bảo Đại. Thời kỳ <u>1953–1955</u>,
+          khi Việt Minh tiếp quản, tỉnh Lai Châu thuộc Khu Tây Bắc, tách khỏi
+          Liên khu Việt Bắc. Ngày <u>29/4/1955</u>, tỉnh Lai Châu chính thức
+          giải thể, 6 châu cũ (Mường Tè, Mường Lay, Sìn Hồ, Điện Biên, Quỳnh
+          Nhai, Tuần Giáo) trực thuộc Khu tự trị Thái Mèo.
+        </p>
+
+        <p>
+          <strong
+            ><mark
+              >4. Tái lập tỉnh Lai Châu và Khu tự trị Tây Bắc (1962 –
+              1975)</mark
+            ></strong
+          ><br />
+          Ngày <u>27/10/1962</u>, Khu tự trị Thái Mèo đổi tên thành Khu tự trị
+          Tây Bắc và tỉnh Lai Châu được tái lập, gồm 7 huyện: Mường Tè, Mường
+          Lay, Sìn Hồ, Điện Biên, Phong Thổ, Tuần Giáo, Tủa Chùa. Đây là thời kỳ
+          tỉnh Lai Châu nằm trong khu vực chiến lược quan trọng về chính trị –
+          quân sự của miền Bắc Việt Nam. Đến cuối năm <u>1975</u>, cấp Khu tự
+          trị bị giải thể, tỉnh Lai Châu vẫn giữ 7 huyện với thị xã Lai Châu làm
+          tỉnh lỵ.
+        </p>
+
+        <p>
+          <strong
+            ><mark
+              >5. Biến cố về thiên tai và xung đột (1979 – 1992)</mark
+            ></strong
+          ><br />
+          Năm <u>1979</u>, trong cuộc chiến biên giới Việt – Trung, thị trấn
+          Phong Thổ, huyện Phong Thổ bị quân Trung Quốc tấn công và phá hủy
+          nhiều cơ sở. Sau đó, tỉnh lị Lai Châu vẫn duy trì ở thị xã Lai Châu.
+          Đến năm <u>1990</u>, thị xã này bị trận lũ lịch sử phá hủy nặng nề.
+          Ngày <u>18/4/1992</u>, thị xã Điện Biên Phủ được thành lập và trở
+          thành tỉnh lỵ mới, thay thế thị xã Lai Châu.
+        </p>
+
+        <p>
+          <strong
+            ><mark
+              >6. Thành lập các huyện và thị xã mới (2002 – 2013)</mark
+            ></strong
+          ><br />
+          Từ năm <u>2002</u> đến <u>2013</u>, tỉnh Lai Châu tiến hành nhiều thay
+          đổi về hành chính: <br />
+          - Năm <u>2002</u>: Thành lập huyện Tam Đường (tách từ Phong Thổ) và
+          huyện Mường Nhé (tách từ Mường Tè và Mường Lay).<br />
+          - Năm <u>2003</u>: Tách tỉnh Lai Châu cũ thành tỉnh Lai Châu mới và
+          tỉnh Điện Biên; thị xã Mường Lay thuộc Điện Biên.<br />
+          - Năm <u>2004</u>: Thành lập thị xã Lai Châu mới trên cơ sở một phần
+          huyện Tam Đường.<br />
+          - Năm <u>2008 – 2012</u>: Thành lập huyện Tân Uyên và huyện Nậm
+          Nhùn.<br />
+          - Năm <u>2013</u>: Thị xã Lai Châu được nâng cấp thành thành phố Lai
+          Châu, trở thành trung tâm hành chính tỉnh.
+        </p>
+
+        <p>
+          <strong><mark>7. Lai Châu hiện nay (sau 2013 – 2025)</mark></strong
+          ><br />
+          Hiện nay, tỉnh Lai Châu gồm 1 thành phố (Lai Châu) và 7 huyện: Mường
+          Tè, Phong Thổ, Sìn Hồ, Tam Đường, Than Uyên, Nậm Nhùn, Tân Uyên. Năm
+          <u>2025</u>, theo nghị quyết sửa đổi Hiến pháp, toàn bộ các đơn vị
+          hành chính cấp huyện tại tỉnh Lai Châu được giải thể, còn lại
+          <u>38</u> đơn vị hành chính cấp xã (2 phường và 36 xã).
+        </p>
+
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u" target="_blank"
+            >wiki Lai Châu</a
+          >
+          )
+        </p>
+        <figure class="w3-center">
+          <img
+            src="https://baolaichau.vn/uploaded/post/2019/05/13/Ph%E1%BB%91-tr%E1%BA%BB_1551942293237_1557739467596.jpg"
+            class="w3-container"
+            alt=""
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://baolaichau.vn/h%C6%B0%E1%BB%9Bng-t%E1%BB%9Bi-k%E1%BB%B7-ni%E1%BB%87m-110-n%C4%83m-th%C3%A0nh-l%E1%BA%ADp-t%E1%BB%89nh-70-th%C3%A0nh-l%E1%BA%ADp-%C4%91%E1%BA%A3ng-b%E1%BB%99-t%E1%BB%89nh-15-n%C4%83m-chia-t%C3%A1ch-th%C3%A0nh-l%E1%BA%ADp-t%E1%BB%89nh-lai-ch%C3%A2u/lai-ch%C3%A2u-110-n%C4%83m-l%E1%BB%8Bch-s%E1%BB%AD-v%C3%A0-ph%C3%A1t-tri%E1%BB%83n-%C4%91%E1%BA%A3ng-b%E1%BB%99-lai-ch%C3%A2u-70-n%C4%83m-x%C3%A2y-d%E1%BB%B1ng-v%C3%A0-tr%C6%B0%E1%BB%9Fng-th%C3%A0nh"
+              target="_blank"
+              >baolaichau.vn</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+
+      <hr />
+      <section class="w3-row-padding w3-padding-16 w3-content" id="menu">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          ĐỊA LÝ
+        </h1>
+        <p>
+          Tỉnh Lai Châu có trung tâm hành chính của tỉnh là thành phố Lai Châu,
+          cách Thủ đô Hà Nội 397 km, nằm ở phía tây bắc của Việt Nam, có toạ độ
+          địa lý từ 21°41' đến 22°49' vĩ độ Bắc và 102°19' đến 103°59' kinh độ
+          Đông
+        </p>
+        <p><strong>Điểm cực của tỉnh:</strong></p>
+        <ul>
+          <li>
+            Điểm cực bắc của Lai Châu: xã Sì Lở Lầu, huyện Phong Thổ, khoảng
+            <u>22°39′B, 103°32′Đ</u>
+          </li>
+          <li>
+            Điểm cực đông của Lai Châu: xã Mường Than, huyện Than Uyên, khoảng
+            <u>21°58′B, 104°50′Đ</u>
+          </li>
+          <li>
+            Điểm cực tây của Lai Châu: xã Mù Cả, huyện Mường Tè, khoảng
+            <u>21°50′B, 102°15′Đ</u>
+          </li>
+          <li>
+            Điểm cực nam của Lai Châu: xã Khoen On, huyện Than Uyên, khoảng
+            <u>21°04′B, 104°50′Đ</u>
+          </li>
+        </ul>
+
+        <p>
+          Lưu ý: Các điểm cực hiện chưa được công bố tọa độ chính thức; các số
+          liệu trên chỉ mang tính ước lượng, dựa trên bản đồ hành chính tỉnh
+          Đồng Tháp sau sáp nhập (2025) và dữ liệu bản đồ số.
+        </p>
+        <p><strong>Tiếp giáp:</strong></p>
+        <ul>
+          <li>Phía đông giáp tỉnh Lào Cai</li>
+          <li>Phía tây giáp tỉnh Điện Biên</li>
+          <li>Phía nam giáp tỉnh Điện Biên và tỉnh Sơn La</li>
+          <li>Phía bắc giáp tỉnh Vân Nam, Trung Quốc.</li>
+        </ul>
+        <p style="font-size: 15px">
+          Nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u" target="_blank"
+            >Wikipedia – Lai Châu</a
+          >
+        </p>
+        <figure class="w3-center">
+          <img
+            src="https://cdn.thuvienphapluat.vn/uploads/tintuc/2025/08/29/ban-do-lai-chau-moi.jpg"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Hải Phòng"
+            style="width: 75%"
+          />
+          <span class="text-overlay"></span>
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://thuvienphapluat.vn/chinh-sach-phap-luat-moi/vn/ho-tro-phap-luat/thong-tin-huu-ich/93355/ban-do-lai-chau-moi-nhat-va-danh-sach-36-xa-phuong-tinh-lai-chau"
+              target="_blank"
+              >thuvienphapluat.vn</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section
+        class="w3-row-padding w3-padding-16 w3-content"
+        id="DIEUKIENTUNHIEN"
+      >
+        <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        <article>
+          <p>
+            <strong><mark>1. Vị trí và biên giới</mark></strong
+            ><br />
+            Lai Châu có <u>265,165 km</u> đường biên giới theo Hiệp định về Quy
+            chế quản lý biên giới trên đất liền Việt Nam - Trung Quốc, với cửa
+            khẩu song phương Ma Lù Thàng - Kim Thủy Hà và nhiều đường mòn qua
+            lại trên tuyến biên giới Việt – Trung. Tỉnh nằm ở vị trí chiến lược,
+            trực tiếp giao lưu với các khu vực phía tây nam Trung Quốc. Lai Châu
+            có tiềm năng phát triển
+            <u>dịch vụ – thương mại, xuất nhập khẩu và du lịch</u>, đồng thời
+            giữ vai trò quan trọng về
+            <u>quốc phòng, an ninh và bảo vệ chủ quyền biên giới</u>.
+          </p>
+
+          <p>
+            <strong><mark>2. Vai trò thủy lợi và thủy điện</mark></strong
+            ><br />
+            Lai Châu nằm trong khu vực đầu nguồn và phòng hộ đặc biệt xung yếu
+            của các sông: <u>sông Đà, sông Nậm Na, sông Nậm Mu</u>, điều tiết
+            nguồn nước cho các công trình thủy điện lớn trên sông Đà, góp phần
+            đảm bảo sự phát triển bền vững cho vùng châu thổ sông Hồng.
+          </p>
+
+          <p>
+            <strong><mark>3. Địa hình và núi cao</mark></strong
+            ><br />
+            Địa hình Lai Châu được tạo bởi những dãy núi chạy theo hướng tây bắc
+            – đông nam, xen kẽ nhiều thung lũng sâu và hẹp, nhiều cao nguyên,
+            sông suối và thác ghềnh. Các đỉnh núi nổi bật gồm:
+            <u>Pu Ta Leng cao 3.096 m</u> (đỉnh núi cao thứ 2 tại Việt Nam),
+            <u>Bạch Mộc Lương Tử cao 3.046 m</u>, <u>Fansipan cao 3.143 m</u> và
+            <u>Pu Sam Cáp cao 1.700 m</u>. Địa hình phần lớn dốc và bị chia cắt
+            mạnh, với hơn <u>60% diện tích trên 1.000 m</u> và
+            <u>90% diện tích có độ dốc trên 25°</u>.
+          </p>
+
+          <p>
+            <strong><mark>4. Cao nguyên và thung lũng</mark></strong
+            ><br />
+            Phần đất giữa các dãy núi đồ sộ là vùng núi thấp tương đối rộng,
+            thuộc lưu vực sông Đà với nhiều cao nguyên đá vôi dài <u>400 km</u>,
+            rộng <u>1–25 km</u>, cao <u>600–1.000 m</u>. Một số thung lũng bằng
+            phẳng nổi bật gồm: <u>Mường So, Tam Đường, Bình Lư, Than Uyên</u>.
+            Hệ thống sông suối, thác ghềnh có dòng chảy lớn, tạo tiềm năng lớn
+            cho phát triển <u>thủy điện</u>.
+          </p>
+
+          <p>
+            <strong><mark>5. Tiềm năng kinh tế và chiến lược</mark></strong
+            ><br />
+            Nhờ vị trí địa lý đặc biệt, địa hình đa dạng và hệ thống sông suối
+            phong phú, Lai Châu có tiềm năng phát triển
+            <u>du lịch sinh thái, thủy điện, giao thương biên giới</u>, đồng
+            thời giữ vai trò chiến lược về
+            <u>quốc phòng và an ninh biên giới</u>.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u"
+            >wiki-Lai Châu</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive w3-content"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <h1 style="font-size: 50px">KHÍ HẬU</h1>
+        <br />
+        <article>
+          <p>
+            Lai Châu có khí hậu <u>cận nhiệt đới ẩm</u>. Nhiệt độ trung bình năm
+            khoảng <u>21 °C – 23 °C</u>. Khí hậu được chia thành hai mùa theo độ
+            ẩm: <u>mùa mưa</u> và <u>mùa khô</u>, đồng thời chia làm bốn mùa
+            theo nhiệt độ: <u>xuân, hè, thu, đông</u>.
+          </p>
+        </article>
+        <table
+          style="
+            width: 100%;
+            border-color: rgb(162, 169, 177);
+            background-color: rgb(234, 236, 240);
+          "
+        >
+          <tbody>
+            <tr>
+              <th colspan="14">Dữ liệu khí hậu của Lai Châu</th>
+            </tr>
+            <tr>
+              <th scope="row">Tháng</th>
+              <th scope="col">1</th>
+              <th scope="col">2</th>
+              <th scope="col">3</th>
+              <th scope="col">4</th>
+              <th scope="col">5</th>
+              <th scope="col">6</th>
+              <th scope="col">7</th>
+              <th scope="col">8</th>
+              <th scope="col">9</th>
+              <th scope="col">10</th>
+              <th scope="col">11</th>
+              <th scope="col">12</th>
+              <th>Năm</th>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Cao kỉ lục °C (°F)</th>
+              <td style="background: #ffb3b3">28.0<br />(82.4)</td>
+              <td style="background: #ff9999">30.0<br />(86.0)</td>
+              <td style="background: #ff8080">32.0<br />(89.6)</td>
+              <td style="background: #ff6666">33.5<br />(92.3)</td>
+              <td style="background: #ff4d4d">36.0<br />(96.8)</td>
+              <td style="background: #ff3333">35.5<br />(95.9)</td>
+              <td style="background: #ff1a1a">34.0<br />(93.2)</td>
+              <td style="background: #ff3333">33.5<br />(92.3)</td>
+              <td style="background: #ff4d4d">32.0<br />(89.6)</td>
+              <td style="background: #ff6666">31.0<br />(87.8)</td>
+              <td style="background: #ff8080">29.0<br />(84.2)</td>
+              <td style="background: #ff9999">27.0<br />(80.6)</td>
+              <td style="background: #ff4d4d">36.0<br />(96.8)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Trung bình ngày tối đa °C (°F)</th>
+              <td style="background: #ffd699">16.5<br />(61.7)</td>
+              <td style="background: #ffd27f">17.0<br />(62.6)</td>
+              <td style="background: #ffbf66">19.0<br />(66.2)</td>
+              <td style="background: #ffb84d">21.5<br />(70.7)</td>
+              <td style="background: #ffa633">24.0<br />(75.2)</td>
+              <td style="background: #ff9933">25.5<br />(77.9)</td>
+              <td style="background: #ff9933">26.0<br />(78.8)</td>
+              <td style="background: #ff9933">25.5<br />(77.9)</td>
+              <td style="background: #ffa633">24.0<br />(75.2)</td>
+              <td style="background: #ffb84d">21.5<br />(70.7)</td>
+              <td style="background: #ffbf66">19.0<br />(66.2)</td>
+              <td style="background: #ffd27f">17.0<br />(62.6)</td>
+              <td style="background: #ffa633">21.5<br />(70.7)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Trung bình ngày °C (°F)</th>
+              <td style="background: #ffe0b3">13.0<br />(55.4)</td>
+              <td style="background: #ffd9a3">14.0<br />(57.2)</td>
+              <td style="background: #ffd18f">16.0<br />(60.8)</td>
+              <td style="background: #ffcc7a">18.5<br />(65.3)</td>
+              <td style="background: #ffbf66">21.0<br />(69.8)</td>
+              <td style="background: #ffb359">22.5<br />(72.5)</td>
+              <td style="background: #ffb359">23.0<br />(73.4)</td>
+              <td style="background: #ffb359">22.5<br />(72.5)</td>
+              <td style="background: #ffbf66">21.0<br />(69.8)</td>
+              <td style="background: #ffcc7a">18.5<br />(65.3)</td>
+              <td style="background: #ffd18f">15.5<br />(59.9)</td>
+              <td style="background: #ffd9a3">13.5<br />(56.3)</td>
+              <td style="background: #ffbf66">18.0<br />(64.4)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Tối thiểu trung bình ngày °C (°F)</th>
+              <td style="background: #e0ffd6">9.5<br />(49.1)</td>
+              <td style="background: #d6ffcc">10.5<br />(50.9)</td>
+              <td style="background: #ccffb3">12.5<br />(54.5)</td>
+              <td style="background: #bfff99">15.0<br />(59.0)</td>
+              <td style="background: #b3ff80">17.5<br />(63.5)</td>
+              <td style="background: #99ff66">19.0<br />(66.2)</td>
+              <td style="background: #99ff66">19.5<br />(67.1)</td>
+              <td style="background: #99ff66">19.0<br />(66.2)</td>
+              <td style="background: #b3ff80">17.5<br />(63.5)</td>
+              <td style="background: #bfff99">15.0<br />(59.0)</td>
+              <td style="background: #ccffb3">12.0<br />(53.6)</td>
+              <td style="background: #d6ffcc">10.0<br />(50.0)</td>
+              <td style="background: #99ff66">15.5<br />(59.9)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Thấp kỉ lục °C (°F)</th>
+              <td style="background: #e0f7ff">0.0<br />(32.0)</td>
+              <td style="background: #c8f0ff">1.0<br />(33.8)</td>
+              <td style="background: #b0e8ff">3.0<br />(37.4)</td>
+              <td style="background: #99e0ff">6.0<br />(42.8)</td>
+              <td style="background: #66d4ff">10.0<br />(50.0)</td>
+              <td style="background: #33c8ff">15.0<br />(59.0)</td>
+              <td style="background: #1abfff">16.0<br />(60.8)</td>
+              <td style="background: #33c8ff">15.0<br />(59.0)</td>
+              <td style="background: #66d4ff">10.0<br />(50.0)</td>
+              <td style="background: #99e0ff">6.0<br />(42.8)</td>
+              <td style="background: #b0e8ff">2.0<br />(35.6)</td>
+              <td style="background: #c8f0ff">0.0<br />(32.0)</td>
+              <td style="background: #33c8ff">16.0<br />(60.8)</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Lượng mưa trung bình mm (inches)</th>
+              <td style="background: #e0ffe0">15<br />(0.59)</td>
+              <td style="background: #d4ffd4">20<br />(0.79)</td>
+              <td style="background: #bfffbf">40<br />(1.57)</td>
+              <td style="background: #99ff99">120<br />(4.72)</td>
+              <td style="background: #66ff66">180<br />(7.09)</td>
+              <td style="background: #33cc33; color: #ffffff">
+                250<br />(9.84)
+              </td>
+              <td style="background: #33aa33; color: #ffffff">
+                270<br />(10.63)
+              </td>
+              <td style="background: #339933; color: #ffffff">
+                260<br />(10.24)
+              </td>
+              <td style="background: #66cc66; color: #000000">
+                220<br />(8.66)
+              </td>
+              <td style="background: #99ff99; color: #000000">
+                150<br />(5.91)
+              </td>
+              <td style="background: #ccffcc; color: #000000">
+                50<br />(1.97)
+              </td>
+              <td style="background: #e0ffe0">20<br />(0.79)</td>
+              <td style="background: #33cc33; color: #ffffff">
+                1.535<br />(60.43)
+              </td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Số ngày mưa trung bình</th>
+              <td style="background: #b3ccff">9</td>
+              <td style="background: #99b3ff">11</td>
+              <td style="background: #8099ff">14</td>
+              <td style="background: #6680ff">15</td>
+              <td style="background: #4d66ff">16</td>
+              <td style="background: #3352ff">18</td>
+              <td style="background: #334dff">18</td>
+              <td style="background: #3352ff">17</td>
+              <td style="background: #4d66ff">14</td>
+              <td style="background: #6680ff">11</td>
+              <td style="background: #8099ff">8</td>
+              <td style="background: #99b3ff">5</td>
+              <td style="background: #3352ff">156</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Độ ẩm tương đối trung bình (%)</th>
+              <td style="background: #3366ff; color: #ffffff">80</td>
+              <td style="background: #3366ff; color: #ffffff">82</td>
+              <td style="background: #3366ff; color: #ffffff">85</td>
+              <td style="background: #3366ff; color: #ffffff">87</td>
+              <td style="background: #3366ff; color: #ffffff">86</td>
+              <td style="background: #3366ff; color: #ffffff">84</td>
+              <td style="background: #3366ff; color: #ffffff">83</td>
+              <td style="background: #3366ff; color: #ffffff">84</td>
+              <td style="background: #3366ff; color: #ffffff">85</td>
+              <td style="background: #3366ff; color: #ffffff">83</td>
+              <td style="background: #3366ff; color: #ffffff">81</td>
+              <td style="background: #3366ff; color: #ffffff">80</td>
+              <td style="background: #3366ff; color: #ffffff">83</td>
+            </tr>
+            <tr style="text-align: center">
+              <th scope="row">Số giờ nắng trung bình tháng</th>
+              <td style="background: #ffff99">70</td>
+              <td style="background: #ffff66">60</td>
+              <td style="background: #ffff66">70</td>
+              <td style="background: #ffff33">100</td>
+              <td style="background: #ffff00">160</td>
+              <td style="background: #ffee00">180</td>
+              <td style="background: #ffdd00">190</td>
+              <td style="background: #ffee00">180</td>
+              <td style="background: #ffff33">150</td>
+              <td style="background: #ffff66">120</td>
+              <td style="background: #ffff99">100</td>
+              <td style="background: #ffffcc">80</td>
+              <td style="background: #ffee00">1.440</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 15px">
+          (Nguồn:
+          <a href="https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u" target="_blank">
+            wiki-Lai Châu </a
+          >)
+        </p>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Thành phố Lai Châu",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/lai-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Tam Đường",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/tam-duong-lai-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Sìn Hồ",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/sin-ho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Mường Tè",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/muong-te?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Phong Thổ",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/phong-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Than Uyên",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/than-uyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Tân Uyên",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/tan-uyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nậm Nhùn",
+              parent: "Tỉnh Lai Châu cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/lai-chau/nam-nhun?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16 w3-content" id="contact">
+        <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        <article>
+          <section>
+            <table
+              style="
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #999;
+              "
+            >
+              <tr>
+                <th>Năm</th>
+                <th>Dân số</th>
+                <th>±%</th>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>1995</td>
+                  <td>350,000</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>1996</td>
+                  <td>355,000</td>
+                  <td>+1.4%</td>
+                </tr>
+                <tr>
+                  <td>1997</td>
+                  <td>360,000</td>
+                  <td>+1.4%</td>
+                </tr>
+                <tr>
+                  <td>1998</td>
+                  <td>365,000</td>
+                  <td>+1.4%</td>
+                </tr>
+                <tr>
+                  <td>1999</td>
+                  <td>370,500</td>
+                  <td>+1.5%</td>
+                </tr>
+                <tr>
+                  <td>2000</td>
+                  <td>380,000</td>
+                  <td>+2.6%</td>
+                </tr>
+                <tr>
+                  <td>2001</td>
+                  <td>387,000</td>
+                  <td>+1.8%</td>
+                </tr>
+                <tr>
+                  <td>2002</td>
+                  <td>394,000</td>
+                  <td>+1.8%</td>
+                </tr>
+                <tr>
+                  <td>2003</td>
+                  <td>401,000</td>
+                  <td>+1.8%</td>
+                </tr>
+                <tr>
+                  <td>2004</td>
+                  <td>407,500</td>
+                  <td>+1.6%</td>
+                </tr>
+                <tr>
+                  <td>2005</td>
+                  <td>410,000</td>
+                  <td>+0.6%</td>
+                </tr>
+                <tr>
+                  <td>2006</td>
+                  <td>415,000</td>
+                  <td>+1.2%</td>
+                </tr>
+                <tr>
+                  <td>2007</td>
+                  <td>420,000</td>
+                  <td>+1.2%</td>
+                </tr>
+                <tr>
+                  <td>2008</td>
+                  <td>425,000</td>
+                  <td>+1.2%</td>
+                </tr>
+                <tr>
+                  <td>2009</td>
+                  <td>430,000</td>
+                  <td>+1.2%</td>
+                </tr>
+                <tr>
+                  <td>2010</td>
+                  <td>445,000</td>
+                  <td>+3.5%</td>
+                </tr>
+                <tr>
+                  <td>2011</td>
+                  <td>450,000</td>
+                  <td>+1.1%</td>
+                </tr>
+                <tr>
+                  <td>2012</td>
+                  <td>455,000</td>
+                  <td>+1.1%</td>
+                </tr>
+                <tr>
+                  <td>2013</td>
+                  <td>460,000</td>
+                  <td>+1.1%</td>
+                </tr>
+                <tr>
+                  <td>2014</td>
+                  <td>465,000</td>
+                  <td>+1.1%</td>
+                </tr>
+                <tr>
+                  <td>2015</td>
+                  <td>470,000</td>
+                  <td>+1.1%</td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td>472,500</td>
+                  <td>+0.5%</td>
+                </tr>
+                <tr>
+                  <td>2017</td>
+                  <td>475,000</td>
+                  <td>+0.5%</td>
+                </tr>
+                <tr>
+                  <td>2018</td>
+                  <td>477,000</td>
+                  <td>+0.4%</td>
+                </tr>
+                <tr>
+                  <td>2019</td>
+                  <td>478,400</td>
+                  <td>+0.3%</td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td>480,000</td>
+                  <td>+0.3%</td>
+                </tr>
+                <tr>
+                  <td>2021</td>
+                  <td>482,000</td>
+                  <td>+0.4%</td>
+                </tr>
+                <tr>
+                  <td>2022</td>
+                  <td>484,000</td>
+                  <td>+0.4%</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>485,500</td>
+                  <td>+0.3%</td>
+                </tr>
+                <tr>
+                  <td>2024</td>
+                  <td>487,000</td>
+                  <td>+0.3%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              <strong><mark>LƯU Ý:</mark></strong
+              >Các số liệu năm 1995-2012 chỉ là ước tính, chưa phải số liệu điều
+              tra chính thức, được nội suy hoặc dựa trên thống kê hàng năm của
+              Tổng cục Thống kê Việt Nam.
+            </p>
+            <p style="font-size: 15px">
+              (Nguồn thông tin:
+              <a href="https://www.gso.gov.vn/" target="_blank">gso.gov.vn</a>)
+            </p>
+            <p>
+              <strong><mark>Dân số và mật độ dân số Lai Châu</mark></strong
+              ><br />
+              Tỉnh Lai Châu là địa phương có mật độ dân số thấp nhất với
+              <u>53 người/km²</u> (diện tích hơn <u>9.068 km²</u>; dân số
+              <u>478,4 nghìn người</u>). Mật độ dân số trung bình của Việt Nam
+              (<u>297 người/km²</u>) gấp 5,6 lần mật độ dân số của tỉnh Lai
+              Châu.
+            </p>
+
+            <p>
+              <strong
+                ><mark>Tôn giáo tại Lai Châu (tính đến 1/4/2019)</mark></strong
+              ><br />
+              Toàn tỉnh có <u>5 tôn giáo</u> với tổng số <u>60.892 người</u>.
+              Trong đó:<br />
+              - Đạo Tin Lành: <u>57.226 người</u><br />
+              - Công giáo: <u>3.577 người</u><br />
+              - Phật giáo: <u>80 người</u><br />
+              - Hồi giáo: <u>7 người</u><br />
+              - Phật giáo Hòa Hảo: <u>2 người</u>
+            </p>
+
+            <p style="font-size: 15px">
+              (Nguồn thông tin:
+              <a
+                href="https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u"
+                target="_blank"
+                >Wikipedia – Lai Châu</a
+              >)
+            </p>
+          </section>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="VANHOA">
+        <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Lai Châu</strong>
+            </summary>
+            <ol type="1">
+              <li>
+                <mark><strong> Lễ hội Gầu Tào </strong></mark>
+                <p>
+                  Thời gian:
+                  <u> tại các huyện như Tam Đường, Sìn Hồ, Phong Thổ</u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Gầu Tào sẽ khai hội vào những ngày đầu tiên của năm mới,
+                    kéo dài suốt rằm tháng Giêng âm lịch (từ mùng 1 đến 15)</u
+                  >
+                </p>
+                <p>
+                  Gầu Tào là một trong những lễ hội Lai Châu nổi bật, được tổ
+                  chức chủ yếu bởi người Mông tại các huyện như Tam Đường, Sìn
+                  Hồ, Phong Thổ. Trong dịp này, cả bản làng cùng nhau hướng về
+                  những điều tốt đẹp, cầu xin sự may mắn, sức khỏe và mùa màng
+                  sung túc. Người dân khi tham gia lễ hội Tam Đường Lai Châu nổi
+                  tiếng này sẽ dựng cây nêu lớn, tổ chức nhiều trò chơi dân gian
+                  như kéo co, ném pao, đánh quay...
+                </p>
+                <p>
+                  Lễ hội Gầu Tào không chỉ thu hút dân địa phương mà còn hấp dẫn
+                  đông đảo du khách yêu thích khám phá bản sắc vùng cao. Gầu Tào
+                  sẽ khai hội vào những ngày đầu tiên của năm mới, kéo dài suốt
+                  rằm tháng Giêng âm lịch (từ mùng 1 đến 15). Đây thực sự là một
+                  trong các lễ hội lớn tại Lai Châu, thể hiện sâu sắc tín ngưỡng
+                  và đời sống tinh thần phong phú của đồng bào Mông.
+                </p>
+                <figure class="w3-center">
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-lai-chau-1.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-lon-tai-lai-chau"
+                      target="_blank"
+                      >cellphones.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Then Kin Pang </strong></mark>
+                <p>Thời gian: <u>rằm tháng Ba âm lịch</u></p>
+                <p>
+                  Địa điểm:
+                  <u>các bản, xã của người Tày, Nùng ở tỉnh Lai Châu,</u>
+                </p>
+                <p>
+                  Nhắc đến các lễ hội truyền thống ở Lai Châu, không thể không
+                  kể tới Then Kin Pang của người Thái trắng huyện Phong Thổ. Lễ
+                  hội Lai Châu này diễn ra vào rằm tháng Ba âm lịch, nhằm tôn
+                  vinh tín ngưỡng Then – một nét văn hóa tâm linh đặc trưng của
+                  người Thái.
+                </p>
+                <p>
+                  Trong ngày hội, các thầy Then sẽ thực hiện nghi lễ cầu phúc,
+                  trừ tà, mang đến sự bình an cho bản mường. Thêm vào đó, phần
+                  không thể thiếu của lễ hội là các hoạt động truyền thống phong
+                  phú như múa xòe, hát Then và những trò chơi dân gian đậm đà
+                  bản sắc. Then Kin Pang chính là một trong những lễ hội lớn tại
+                  Lai Châu mang đậm nét đẹp tâm linh truyền thống, góp phần giữ
+                  gìn bản sắc văn hóa của dân tộc Thái.
+                </p>
+                <figure class="w3-center">
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-lai-chau-2.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-lon-tai-lai-chau"
+                      target="_blank"
+                      >cellphones.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Nàng Han </strong></mark>
+                <p>Thời gian: <u> vào tháng 2 âm lịch</u></p>
+                <p>Địa điểm: <u>xã Mường So, huyện Phong Thổ</u></p>
+                <p>
+                  Lễ hội Nàng Han cũng được coi là một lễ hội Lai Châu nổi bật,
+                  có ý nghĩa lớn đối với người dân tộc Thái. Diễn ra vào tháng 2
+                  âm lịch tại xã Mường So, huyện Phong Thổ, ngày lễ nhằm tưởng
+                  nhớ công lao của nữ tướng Nàng Han - người đã lãnh đạo nhân
+                  dân chống giặc ngoại xâm.
+                </p>
+                <p>
+                  Các lễ hội truyền thống ở Lai Châu như Nàng Han không chỉ chứa
+                  đựng yếu tố lịch sử mà còn hội tụ nhiều hoạt động văn hóa nghệ
+                  thuật hấp dẫn như múa sạp, thi nấu ăn, ném còn... Trong suốt
+                  thời gian lễ hội, không khí tại địa phương trở nên nhộn nhịp,
+                  tràn ngập sắc màu truyền thống, thu hút rất đông du khách tìm
+                  hiểu về đời sống tinh thần của vùng Tây Bắc.
+                </p>
+                <figure class="w3-center">
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-lai-chau-3.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-lon-tai-lai-chau"
+                      target="_blank"
+                      >cellphones.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội văn hóa Động Tiên Sơn </strong></mark>
+                <p>
+                  Thời gian:
+                  <u
+                    >Tháng Giêng âm lịch hằng năm (khoảng Tết Nguyên Đán đến hết
+                    tháng Giêng)</u
+                  >
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >tại xã Bình Lư, huyện Tam Đường, quy tụ đông đảo cộng đồng
+                    địa phương cùng du khách gần xa</u
+                  >
+                </p>
+                <p>
+                  Một trong các lễ hội lớn tại Lai Châu không thể bỏ qua chính
+                  là ngày hội văn hóa Động Tiên Sơn. Diễn ra tại xã Bình Lư,
+                  huyện Tam Đường, quy tụ đông đảo cộng đồng địa phương cùng du
+                  khách gần xa. Lễ hội Tam Đường Lai Châu đầu xuân này mang đậm
+                  tín ngưỡng cầu mùa, cầu an, đồng thời tôn vinh vẻ đẹp thiên
+                  nhiên kỳ thú của động Tiên Sơn.
+                </p>
+                <p>
+                  Không gian lễ hội sôi động với các nghi thức rước lễ, trình
+                  diễn văn nghệ, thi đấu thể thao dân gian như bắn nỏ, kéo co,
+                  đẩy gậy. Tham gia lễ hội Tam Đường Lai Châu này, du khách
+                  không chỉ đắm chìm trong không khí tưng bừng mà còn cảm nhận
+                  nhịp sống mang đậm nét văn hóa của đồng bào Tây Bắc.
+                </p>
+                <figure class="w3-center">
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-lai-chau-4.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-lon-tai-lai-chau"
+                      target="_blank"
+                      >cellphones.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Hoa Ban </strong></mark>
+                <p>Thời gian: <u>vào tháng 3 dương lịch,</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >các trung tâm thị trấn và một số bản làng ở Tân Uyên và
+                    Phong Thổ,</u
+                  >
+                </p>
+                <p>
+                  Hoa Ban – loài hoa đặc trưng của núi rừng Tây Bắc – chính là
+                  linh hồn của lễ hội Hoa Ban tại Lai Châu. Đây là một lễ hội
+                  Lai Châu lớn được tổ chức vào tháng 3 dương lịch, khi những
+                  cánh hoa ban nở trắng rừng, tạo nên khung cảnh thơ mộng.
+                </p>
+                <p>
+                  Trong các lễ hội truyền thống ở Lai Châu, dịp lễ Hoa Ban nổi
+                  bật bởi sự kết hợp hài hòa giữa các hoạt động nghệ thuật dân
+                  gian, trình diễn trang phục dân tộc và hội thi ẩm thực vùng
+                  cao. Ngoài ra, đâyi còn là dịp để tôn vinh giá trị lịch sử,
+                  gắn liền với truyền thuyết tình yêu cảm động giữa chàng trai
+                  Khôm và nàng Ban. Đây cũng là một trong các lễ hội lớn tại Lai
+                  Châu góp phần quảng bá vẻ đẹp thiên nhiên, con người Tây Bắc.
+                </p>
+                <figure class="w3-center">
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-lai-chau-5.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-lon-tai-lai-chau"
+                      target="_blank"
+                      >cellphones.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <mark><strong> Lễ hội Xòe Chiêng </strong></mark>
+                <p>Thời gian: <u> tháng 11 dương lịch </u></p>
+                <p>Địa điểm: <u>tại huyện Than Uyên</u></p>
+                <p>
+                  Lễ hội Xòe Chiêng là lễ hội Lai Châu nổi tiếng, gắn liền với
+                  điệu xòe – nét sinh hoạt truyền thống không thể thiếu của đồng
+                  bào Thái. Diễn ra vào khoảng tháng 11 dương lịch tại huyện
+                  Than Uyên, nơi đây quy tụ hàng nghìn người tham gia, cùng nắm
+                  tay nhau xòe trong không khí tưng bừng, sôi động.
+                </p>
+                <p>
+                  Các lễ hội truyền thống ở Lai Châu như Xòe Chiêng mang ý nghĩa
+                  gắn kết cộng đồng, gửi gắm ước nguyện mưa thuận gió hòa, mùa
+                  màng tươi tốt. Trong khuôn khổ ngày lễ, ngoài những điệu xòe
+                  cổ truyền, còn có các chương trình biểu diễn nghệ thuật, thi
+                  đấu thể thao dân tộc hấp dẫn. Xòe Chiêng xứng đáng là một
+                  trong các lễ hội lớn tại Lai Châu mà bạn nhất định phải trải
+                  nghiệm.
+                </p>
+                <figure class="w3-center">
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-lai-chau-6.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-lon-tai-lai-chau"
+                      target="_blank"
+                      >cellphones.com.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DITICH">
+        <h1 class="w3-center" style="font-size: 50px">
+          DI TÍCH, DI SẢN VĂN HOÁ
+        </h1>
+        <article>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích:
+            </summary>
+            <ol type="1">
+              <li>
+                Thác Trái Tim<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/MpPPfCgKoMfQq1f58"
+                  target="_blank"
+                  >FGHH+J7J, Sìn Suối Hồ, Phong Thổ, Lai Châu, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích danh lam thắng cảnh.<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/540a350f-bb0b-4262-81ab-ee80d014bb83-thac-trai-tim-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Bản văn hoá du lịch và Quần thể hang động Gia Khâu 1<br />-Địa
+                điểm:<a
+                  href="https://maps.app.goo.gl/L8SyfbA5qTYJFgWR6"
+                  target="_blank"
+                  >Sì Lở Lầu, Phong Thổ District, Lai Chau, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá - thiên nhiên –
+                danh lam thắng cảnh<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/13b221ce-f162-4035-9f5d-3adaa514abcc-ban-van-hoa-du-lich-va-quan-the-hang-dong-gia-khau-1png.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Thác Tác Tình<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/WE692RFbxu5KnZrr6"
+                  target="_blank"
+                  >TT. Tam Đường, Tam Đường District, Lai Chau, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên – danh lam thắng
+                cảnh..<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/5129834d-387f-46ad-a61b-32e4e383cb4d-thac-tac-tinh-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Động Tiên Sơn<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/D2UFUyiyUoae17HAA"
+                  target="_blank"
+                  >VQ2H+RWC, Động, Tiên Sơn, P. Hàm Rồng, Thanh Hóa, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên – danh lam thắng
+                cảnh.<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/4d564134-3557-4c1c-bdaa-c40c655086c6-dong-tien-son-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Núi Đá Ô<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/zEn7u4Uy5xXQGsfy5"
+                  target="_blank"
+                  >Sìn Hồ District, Lai Chau, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên – danh lam thắng
+                cảnh..<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/45d94b06-e6b5-4f08-af72-ffce42ae8bff-nui-da-o-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích khảo cổ Nậm Tun<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/bDQzvMd3BffprN6k7"
+                  target="_blank"
+                  >Phong Thổ District, Lai Chau, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích khảo cổ<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/edd11d36-82ac-4128-b57e-ee36322c5d51-di-tich-khao-co-nam-tun-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Thác Cầu Mây và Cổng Trời<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/nDqpsV4Evg1aXvccA"
+                  target="_blank"
+                  >Sơn Bình, Sa Pa, Lao Cai, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên – danh lam thắng
+                cảnh.<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/1839ccf2-a793-4a3d-b7eb-fdd48731068e-cong-troi-o-quy-ho-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Động Pu Sam Cáp<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/WV9nKRdg3njmpmJT6"
+                  target="_blank"
+                  >9CP6+83J, Bế Văn Đàn, Nậm Loỏng, Lai Châu, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích thiên nhiên – danh lam thắng
+                cảnh.<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/a4e6f07b-ca1b-4894-a4a5-317771191dba-dong-pu-sam-cap-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích lịch sử Bia Lê Thái Tổ (Lê Lợi)<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/oberF1AFBMZJwpNdA"
+                  target="_blank"
+                  >Pu Dào, Nam Nhun, Lai Chau, Vietnam</a
+                >
+                <br />-Loại di tích:Di tích lịch sử – văn hoá.<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/997b1035-9b2b-4689-9d2b-6e291b17b5a7-di-tich-lich-su-bia-le-thai-to-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Dinh thự Đèo Văn Long<br />-Địa điểm:<a
+                  href="https://maps.app.goo.gl/moK5We6VchdEBxSR9"
+                  target="_blank"
+                  >Mường Lay, Lai Chau, Vietnam
+                </a>
+                <br />-Loại di tích:Di tích lịch sử – văn hoá.<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/b2cc8527-b197-4708-bdd2-f36f71c1f15b-dinh-thu-deo-van-long-lai-chaupng.png"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/lai-chau/danh-sach-10-di-tich-lich-su-tai-lai-chau-noi-tieng"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol type="1">
+              <li>
+                -Kéo co của người Thái <br />
+                - Loại hình: Nghệ thuật trình diễn dân gian<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://tse2.mm.bing.net/th/id/OIP.JM_hxHMJjEPahhpiSkzuKwAAAA?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="http://thegioidisan.vn/vi/keo-co-trong-le-hoi-truyen-thong-cua-dong-bao-vung-tay-bac.html?q=/vi/keo-co-trong-le-hoi-truyen-thong-cua-dong-bao-vung-tay-bac.html"
+                      target="_blank"
+                      >thegioidisan.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội gầu tào của người Mông<br />
+                - Loại hình: Lễ hội truyền thống<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://dulichkhatvongviet.com/wp-content/uploads/2020/09/cay_neu.jpg"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://dulichkhatvongviet.com/le-hoi-gau-tao/"
+                      target="_blank"
+                      >dulichkhatvongviet.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghệ thuật Xòe Thái<br />
+                - Loại hình:Nghệ thuật trình diễn dân gian<br />
+                <figure class="w3-center">
+                  <img
+                    src="https://th.bing.com/th/id/OIP.dIfXNZxatjB6e4Nf56v8cAHaFL?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt=""
+                  />
+                  <figcaption>
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.aseantraveller.net/tin-tuc/931_nghe-thuat-xoe-thai-viet-nam-duoc-vinh-danh-di-san-phi-vat-the-dai-dien-cua-nhan-loai.html"
+                      target="_blank"
+                      >aseantraveller.net</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="GIAODUC">
+        <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        <article>
+          <p>
+            <strong><mark>Chuyển đổi số và đổi mới sáng tạo</mark></strong
+            ><br />
+            Ngay từ đầu năm 2025, ngành Giáo dục Lai Châu xác định
+            <u
+              >chuyển đổi số, đổi mới sáng tạo và ứng dụng khoa học – công
+              nghệ</u
+            >
+            là nhiệm vụ trọng tâm. Sở Giáo dục và Đào tạo đã ban hành
+            <u>35 văn bản chỉ đạo</u>, kiện toàn Ban Chỉ đạo chuyên trách và
+            triển khai Đề án 06 với <u>51 thành viên</u>, bảo đảm cơ chế chỉ đạo
+            rõ người, rõ việc, rõ trách nhiệm từ sở đến từng cơ sở giáo dục.
+          </p>
+
+          <p>
+            <strong><mark>Nâng cao nhận thức và kỹ năng số</mark></strong
+            ><br />
+            Ngành tập trung tuyên truyền, bồi dưỡng kỹ năng số và ứng dụng trí
+            tuệ nhân tạo (AI) cho cán bộ quản lý, giáo viên và học sinh. Trong
+            năm, các lớp tập huấn và hội nghị đã thu hút hơn
+            <u>12.000 cán bộ, giáo viên</u> tham gia, cùng với hơn
+            <u>100.000 học sinh</u> được cập nhật kiến thức về công nghệ số và
+            AI.
+          </p>
+
+          <p>
+            <strong><mark>Chuyển đổi số trong quản lý giáo dục</mark></strong
+            ><br />
+            <u>100% cơ sở giáo dục</u> sử dụng phần mềm quản trị nhà trường trên
+            môi trường số; hồ sơ, sổ điểm, học bạ đều được quản lý điện tử. Toàn
+            bộ thủ tục hành chính được cung cấp trực tuyến, trong đó
+            <u>90% hồ sơ</u> được xử lý toàn trình, đúng hạn, giúp giảm chi phí,
+            tăng tính minh bạch. Hệ thống cơ sở dữ liệu ngành giáo dục được liên
+            thông với cơ sở dữ liệu quốc gia về dân cư, định danh gần như
+            <u>toàn bộ học sinh và giáo viên</u>.
+          </p>
+
+          <p>
+            <strong><mark>Ứng dụng công nghệ trong giảng dạy</mark></strong
+            ><br />
+            <u>336/336 trường học</u> đã được kết nối mạng LAN và Internet cáp
+            quang tốc độ cao. Hơn <u>99% giáo viên</u> ứng dụng công nghệ thông
+            tin trong giảng dạy; <u>91% cán bộ</u> sử dụng thành thạo ít nhất
+            một nền tảng AI. Các phần mềm, bảng tương tác, công cụ thiết kế bài
+            dạy giúp tiết học sinh động, nâng cao hiệu quả tiếp thu của học
+            sinh.
+          </p>
+
+          <p>
+            <strong><mark>Hợp tác và phát triển hạ tầng</mark></strong
+            ><br />
+            Ngành triển khai mô hình “3 nhà”, phối hợp với Viettel Lai Châu và
+            VNPT Lai Châu để bảo đảm hạ tầng kỹ thuật, tập huấn và xử lý sự cố.
+            Mặc dù còn khó khăn về Internet ở vùng sâu, thiết bị học tập số và
+            nhân lực CNTT, ngành giáo dục tiếp tục đầu tư, phát triển dữ liệu số
+            và ứng dụng AI trong quản lý và dạy học.
+          </p>
+
+          <p>
+            <strong><mark>Kết quả và hướng phát triển</mark></strong
+            ><br />
+            Chuyển đổi số đã giúp nâng cao chất lượng quản lý, giảng dạy và học
+            tập, tạo nền tảng giáo dục hiện đại, bình đẳng và hiệu quả hơn cho
+            học sinh vùng cao, giúp Lai Châu dần hòa nhịp với xu thế phát triển
+            giáo dục chung của cả nước.
+          </p>
+        </article>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/H%E1%BA%A3i_Ph%C3%B2ng"
+            >wiki-Hải Phòng</a
+          >
+          )
+        </p>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="KINHTE">
+        <br />
+        <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        <article>
+          <h2 style="text-align: left">TÓM TẮT PHÁT TRIỂN KINH TẾ LAI CHÂU</h2>
+          <p>
+            <strong><mark>1. Tăng trưởng và cơ cấu kinh tế:</mark></strong
+            ><br />
+            Lai Châu là một tỉnh khó khăn nhưng có tốc độ tăng trưởng kinh tế
+            cao, GDP bình quân đạt khoảng <u>13%/năm</u>. Cơ cấu kinh tế chuyển
+            dịch tích cực: nông – lâm – thủy sản chiếm <u>34%</u> (giảm 11,3%),
+            công nghiệp – xây dựng <u>35%</u> (tăng 9,6%) và dịch vụ
+            <u>31%</u> (tăng 1,7%). Thu nhập bình quân đầu người năm 2010 đạt
+            <u>8 triệu đồng</u>, gấp <u>2,4 lần</u> so với năm 2005.
+          </p>
+
+          <p>
+            <strong><mark>2. Nông nghiệp – lâm nghiệp – thủy sản:</mark></strong
+            ><br />
+            Tỉnh xây dựng các vùng sản xuất hàng hóa tập trung, nâng cao hiệu
+            quả kinh tế. Cây chè, thảo quả và cao su là những sản phẩm xuất khẩu
+            chủ lực. Lâm nghiệp được xã hội hóa, phát triển rừng kinh tế phục vụ
+            chế biến công nghiệp. Sản xuất nông thôn hướng tới kinh tế hộ và
+            trang trại, hợp tác xã nông lâm nghiệp hỗ trợ dịch vụ hai đầu cho hộ
+            nông dân.
+          </p>
+
+          <p>
+            <strong><mark>3. Công nghiệp:</mark></strong
+            ><br />
+            Công nghiệp được coi là ngành mũi nhọn, phục vụ sản xuất nông – lâm
+            nghiệp. Lai Châu chú trọng thủy điện (như thủy điện Lai Châu
+            <u>1.200 MW</u>), chế biến nông – lâm sản, vật liệu xây dựng và tiểu
+            thủ công nghiệp truyền thống như mây tre đan, dệt thổ cẩm và lương
+            thực thực phẩm.
+          </p>
+
+          <p>
+            <strong><mark>4. Hạ tầng kinh tế – xã hội:</mark></strong
+            ><br />
+            Hệ thống điện đã phủ tới <u>74%</u> hộ dân, nhiều thủy điện lớn được
+            xây dựng. Nước sạch đạt <u>50%</u> ở đô thị và <u>74%</u> ở nông
+            thôn. Viễn thông và Internet phát triển nhanh, với
+            <u>1,21 thuê bao/100 dân</u>. Hệ thống bưu điện, bưu cục và dịch vụ
+            truyền thông được mở rộng.
+          </p>
+
+          <p>
+            <strong><mark>5. Giáo dục và phát triển con người:</mark></strong
+            ><br />
+            Giáo dục được quan tâm, với <u>392 trường</u> và
+            <u>5.759 lớp học</u> năm 2009–2010, phổ cập giáo dục tiểu học và
+            trung học cơ sở ở nhiều xã. Dân trí tăng lên, công tác xóa đói giảm
+            nghèo đạt kết quả tích cực, tạo nền tảng cho phát triển kinh tế lâu
+            dài.
+          </p>
+        </article>
+        <h2 style="text-align: center">Biểu đồ GRDP Lai Châu 2016–2024</h2>
+        <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+        <figure
+          style="width: 80%; margin: auto"
+          class="w3-center chart-container"
+        >
+          <canvas id="grdpChartLaiChau" class="w3-center"></canvas>
+        </figure>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script>
+          const ctx = document
+            .getElementById("grdpChartLaiChau")
+            .getContext("2d");
+
+          const grdpLaiChau = [
+            14.5, 16.4, 18.5, 20.9, 23.6, 26.6, 30.1, 31.0, 31.0,
+          ];
+          const growthLaiChau = [13, 13, 13, 13, 13, 13, 13, 0, 0];
+
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+              ],
+              datasets: [
+                {
+                  label: "GRDP Lai Châu (tỷ đồng)",
+                  data: grdpLaiChau,
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: growthLaiChau,
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+                title: {
+                  display: true,
+                  text: "GRDP và Tăng trưởng kinh tế Lai Châu (2016–2024)",
+                },
+              },
+              scales: {
+                y: {
+                  beginAtZero: false,
+                  position: "left",
+                  title: { display: true, text: "GRDP (tỷ đồng)" },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: { display: true, text: "Tăng trưởng (%)" },
+                },
+                x: {
+                  title: { display: true, text: "Năm" },
+                },
+              },
+            },
+          });
+        </script>
+
+        <p>
+          <strong>Lưu ý:</strong>
+          <em
+            >số liệu các năm trên chỉ là ước tính, dựa trên tốc độ tăng trưởng
+            GRDP trung bình và dữ liệu trên wiki</em
+          >
+        </p>
+        <p style="font-size: 15px">
+          (nguồn thông tin:
+          <a href="https://vi.wikipedia.org/wiki/Lai_Ch%C3%A2u" target="_blank"
+            >Wikipedia – Lai Châu</a
+          >)
+        </p>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="AMTHUC">
+        <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+        <h2>-Lai Châu có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Lợn cắp nách
+              </summary>
+              <p>
+                Nếu đã đến với Lai Châu bạn không nên bỏ qua món lợn cắp nách vô
+                cùng nổi tiếng hấp dẫn mọi du khách ở vùng. Loài lợn này được
+                chăn thả tự nhiên, chỉ ăn lá rau rừng và chạy bộ nên thịt vô
+                cùng săn chắc.
+              </p>
+              <p>
+                Sở dĩ người ta gọi là lợn cắp nách vì chúng có trọng lượng nhỏ
+                (10-15kg) nên có thể cho vào giỏ, xách tay, cắp vào nách,...Một
+                số món ăn ngon được chế biến từ lợn cắp nách như: Luộc, hấp,
+                nướng, hun khói, xào, nấu giả cầy… tuyệt đối nên thử một lần khi
+                ghé đến nhé.
+              </p>
+              -Giá tham khảo:Khoảng 150.000 đồng/ đĩa <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/scqKL7xkes2g3SLJA"
+                >Tân Phong, Lai Châu, Lai Chau, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270825379361.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Lam nhọ
+              </summary>
+              <p>
+                Món lam nhọ này có nguyên liệu chính là thịt trâu hoặc thịt bò
+                ngon, được nướng trên than cho thật chín. Sau đó thái theo những
+                thớ mỏng trộn cùng mắc khén, ớt, tỏi, gừng, quả cà rừng, rau bí,
+                quả bí non… Sau đó trộn đều cho vào một ống tre, rồi nướng cho
+                đến khi các nguyên liệu chín đều.
+              </p>
+              -Giá tham khảo:Khoảng 50.000 -100.000 đồng/ống. <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/7HyYQqJnmVJi9pwd6"
+                >153 Vừ A Dính, Quyết Thắng, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270826011058.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Bánh dày người Mông
+              </summary>
+              <p>
+                Một trong những đặc sản Lai Châu không thể không kể đến Bánh dày
+                của người Mông, bánh dày ở đây không có nhân, to và được dán
+                bằng mỡ lợn. Chiếc bánh có mùi thơm của gạo nếp nương, trứng gà,
+                mỡ lợn, tất cả hòa quyện vô cùng hấp dẫn.
+              </p>
+              -Giá tham khảo:Khoảng 100.000 đồng/cái. <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/9HAzbttFqyBQbZmeA"
+                >342 Đường Trần Hưng Đạo, Quyết Thắng, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270826372514.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Nộm rau dớn
+              </summary>
+              <p>
+                Nộm rau dớn là một món ăn của người Thái, món ăn này tuy đơn
+                giản nhưng có đủ vị đặc trưng, vị bùi của rau dớn, vị chua ngọt
+                đan xen cay cay của ớt ăn không biết ngấy.
+              </p>
+              -Giá tham khảo: Khoảng 50.000 đồng/đĩa.<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/XkWUvhym7WpjnaNx8"
+                >San Thàng, Lai Chau, 30000, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270827073773.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Trứng kiến
+              </summary>
+              <p>
+                Trứng kiến là một đặc sản ở vùng Lai Châu, chúng được ướp gia vị
+                trong lá dong, lá chuối rồi mang nướng trên bếp than hồng. Hoặc
+                có thể chế biến cùng xôi nếp nương, làm nộm với lá chua chát,
+                nấu canh ngọt dịu…vừa lạ miệng vừa thơm ngon.
+              </p>
+              -Giá tham khảo: Khoảng 100.000 đồng/đĩa.<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/CfADKbsp7wrE4JhY7"
+                >62 Trần Phú, Tân Phong, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270827258036.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Lòng lợn nhồi gạo nếp
+              </summary>
+              <p>
+                Món này còn có tên địa phương là tùng càng nhảng. Gạo nếp, thảo
+                quả giã nhỏ được trộn cùng tiết sống rồi nhồi vào lòng lợn. Sau
+                đó được luộc chín, để ăn dần trong những dịp lễ Tết, món ăn có
+                mùi thơm của thảo quả, mùi ngậy của tiết kèm độ dai dai của lòng
+                lợn, rất thích miệng.
+              </p>
+              -Giá tham khảo: Khoảng 20.000- 50.000 đồng/đĩa. <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/VuDyh3VQBmzEiTF27"
+                >69 Đường Trần Hưng Đạo, Đoàn Kết, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270827458325.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Cá bống vùi do
+              </summary>
+              <p>
+                Cá bống nhỏ chỉ bằng ngón tay người lớn được bắt tại sông suối
+                mang về chế biến ngay nên vị vô cùng tươi ngon. Thịt cá béo ngậy
+                có mùi thơm của gia vị rừng núi ăn vào là ấn tượng ngay phút ban
+                đầu.
+              </p>
+              -Giá tham khảo:Khoảng 100.000 - 150.000 đồng/đĩa <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/c2MA8ToKawvfUpXc7"
+                >H6JP+F9Q, TT. Cái Dầu, Châu Phú, An Giang, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270828073446.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Xôi tím
+              </summary>
+              <p>
+                Xôi được nấu từ nếp hương đây là một loại nếp dẻo thơm đặc
+                trưng, hạt nếp được nhuộm màu bởi khấu cắm cho ra một màu tím
+                nổi bật, không chỉ ngon mà còn đẹp. Xôi có mùi thơm, dẻo, không
+                dính, ăn vô cùng thích miệng.
+              </p>
+              -Giá tham khảo:Khoảng 50.000 -100.000 đồng/kg. <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/Xjy3ZYMC4B4nAt5A8"
+                >San Thàng, Lai Chau, 30000, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270828261422.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Thịt lợn gác bếp
+              </summary>
+              <p>
+                Thịt lợn gác bếp là một trong những món đặc sản nổi tiếng của
+                vùng miền núi phía Bắc trong đó có Lai Châu. Thịt lợn được ướp
+                với những gia vị miền núi như: Mắc khén, hạt dổi, ớt.
+              </p>
+              <p>
+                Sau đó được đem gác bếp hay hun gói bằng những lò hun. Khi hoàn
+                thành thịt có màu tím sậm, bảo quản được khá lâu cho nên du
+                khách có thể mua món này về làm quà.
+              </p>
+
+              -Giá tham khảo:Khoảng 300.000 - 400.000 đồng/kg <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/Xjy3ZYMC4B4nAt5A8"
+                >San Thàng, Lai Chau, 30000, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270823073177.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Hạt dổi
+              </summary>
+              <p>
+                Hạt dổi Lai Châu là một trong những đặc sản vô cùng nổi tiếng
+                của vùng. Đây là một loại gia vị được sử dụng trong những bữa ăn
+                hàng ngày của người dân nơi đây. Hạt dổi nếp có màu đỏ sậm khi
+                chín và chuyển màu đen khi được phơi khô. Hạt dổi được dùng để
+                tẩm ướp thịt, cá,...
+              </p>
+              -Giá tham khảo: Khoảng 200.000 đồng/100gr<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/q8QLh3HoQYcMzTXB7"
+                >90 Trần Phú, Tân Phong, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270823307581.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Rượu ngô Sùng Phài
+              </summary>
+              <p>
+                Rượu ngô Sùng Phài phải nói là một trong những đặc sản đậm đà
+                hương vị của người Mông ở Lai Châu. Rượu này được tinh chế từ
+                100% ngô nếp, hạt kê thuốc và men lá. Nước dùng để nấu rượu là
+                nước ở Súng Phải, đây là một trong những điều đặc biệt tạo nên
+                hương vị đặc trưng cho rượu.
+              </p>
+              <p>
+                Rượu ngô Sùng Phài giúp bổ xương, kích thích tiêu hóa, lưu thông
+                khí huyết. Cho nên khi uống rượu này nhiều sẽ không bị đau đầu,
+                mệt mỏi hay khó chịu như những loại rượu khác.
+              </p>
+              -Giá tham khảo:Khoảng 500.000 đồng/lít <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/8DURy845NYpaA6YC6"
+                >110 Lê Duẩn, Tân Phong, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270823576706.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Hạt óc chó rừng
+              </summary>
+              <p>
+                Hạt óc chó rừng rất hay mọc ở vùng Tây Bắc, đây là vùng đất rất
+                giàu giá trị dinh dưỡng do đó, trong mỗi hạt óc chó rất giàu
+                axit ellagic, catechin, melatonin và axit phytic những chất này
+                có tác dụng giảm nguy cơ mắc bệnh tim, bệnh ung thư, tốt cho não
+                bộ,...
+              </p>
+              -Giá tham khảo:Khoảng 150.000 đồng/kg (cả vỏ) <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/z3bK7vs5D1unmzXT8"
+                >90 Trần Phú, Tân Phong, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270824156884.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Rượu sâu chít
+              </summary>
+              <p>
+                Sở dĩ rượu sâu chít nổi tiếng là vì được ngâm bằng sâu chít, đây
+                là một loại sâu quý chỉ có tại vùng núi Tây Bắc, sâu này sẽ được
+                rửa sạch rồi để ráo cho vào bình thủy tinh ngâm cùng rượu trắng
+                khoảng 2-3 tiếng là có thể thưởng thức. Tuy nhiên để rượu ngon
+                hơn bạn ngâm càng lâu càng tốt.
+              </p>
+              -Giá tham khảo:Khoảng 900.000 đồng/lít
+              <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/fH6mcXdji8EsbNmz7"
+                >9FMC+X2R, Hoàng Diệu, Tân Phong, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270824375733.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Trà Sơn Mật Hồng Sâm (trà mật sâm)
+              </summary>
+              <p>
+                Trà Sơn Mật Hồng Sâm hay còn gọi là trà mật sâm, đây cũng là món
+                quà đặc sản Lai Châu cực kỳ ý nghĩa vì những lợi ích mà nó đem
+                lại. Uống trà mật sâm giúp giảm mỡ máu, thải độc, ngủ ngon, an
+                thần, ổn định huyết áp. Rất tốt cho người bị huyết áp cao hay
+                người mắc bệnh tim mạch.
+              </p>
+              -Giá tham khảo:Khoảng 130.000 – 250.000đ/kg <br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/TsLA6U5vFTnACk2R7"
+                >tt. Tam Đường, Tam Đường District, Lai Chau, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270824591604.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding">
+                Măng nứa khô chuẩn Lai Châu
+              </summary>
+              <p>
+                Măng khô Lai Châu là một trong những đặc sản được mọi người yêu
+                thích mua làm quà vì hương vị thơm ngon đặc trưng của nó. Măng
+                khô được làm từ măng nứa, có vị ngọt, đặc ruột và bùi không hề
+                bị đắng hay chát,...
+              </p>
+              -Giá tham khảo: Khoảng 130.000 - 160.000 đồng/kg<br />
+              -Địa chỉ thưởng thức:
+              <a href="https://maps.app.goo.gl/g7YUFtNn2qgwpoyB9"
+                >Huyện ủy - HĐND - UBND Nậm Nhùn, ĐT127, Tổ dân phố Noong Kiêng,
+                Nậm Nhùn, Lai Châu, Vietnam</a
+              ><br />
+              <figure class="w3-center">
+                <img
+                  src="https://cdn.tgdd.vn/Files/2022/06/27/1442857/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-202206270825172483.jpg"
+                  class="w3-container"
+                  alt="bu"
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh :
+                  <a
+                    href="https://www.bachhoaxanh.com/kinh-nghiem-hay/lai-chau-co-dac-san-gi-15-dac-san-lai-chau-mua-lam-qua-1442857"
+                    target="_blank"
+                    >bachhoaxanh.com</a
+                  >
+                  )
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="DULICH">
+        <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+        <h2>-Lai Châu có những điểm du lịch nổi tiếng như:</h2>
+        <ol type="1">
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đèo Ô Quy Hồ
+              </summary>
+              <p class="detail-content">
+                Tọa lạc ở độ cao gần 2000 mét, Đèo Ô Quy Hồ mang đến cho du
+                khách một khung cảnh thiên nhiên kỳ vĩ và hùng vĩ. Đường đi lên
+                đèo tuy có hơi khó khăn, nhưng sẽ rất xứng đáng khi bạn được
+                chiêm ngưỡng cảnh quan đẹp đến ngỡ ngàng của địa điểm du lịch
+                Lai Châu.
+              </p>
+              <p>
+                Địa điểm du lịch Lai Châu Đèo Ô Quy Hồ không chỉ là một hành
+                trình đầy thách thức mà còn mang đến cho du khách những trạm
+                dừng chân và điểm nhìn hấp dẫn. Tại đây, bạn có thể thư giãn,
+                chụp ảnh và ngắm nhìn toàn cảnh dãy núi Hoàng Liên Sơn tuyệt
+                đẹp. Ngoài ra, khi đến thăm các bản làng truyền thống, bạn cũng
+                có cơ hội trải nghiệm về văn hóa cũng như phong tục của địa
+                phương.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-2.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Cánh đồng Mường Than – Điểm du lịch Lai Châu hút khách
+              </summary>
+              <p class="detail-content">
+                Tới Cánh đồng Mường Than, du khách chắc chắn sẽ bị choáng ngợp
+                bởi những đồng ruộng màu mỡ xanh mướt và tươi đẹp nơi đây. Đặc
+                biệt, vào những mùa lúa chín, du khách sẽ được hòa mình trong
+                không gian ngập tràn màu vàng óng của cánh đồng lúa.
+              </p>
+              <p>
+                Còn gì tuyệt vời hơn được tận hưởng bức tranh thiên nhiên tràn
+                ngập sắc vàng và hít hà hương thơm phảng phất của mùa lúa chín.
+                Cảm giác tâm hồn như được thư thái, gột rửa đi hết tất cả những
+                muộn phiền, bộn bề của cuộc sống. Đây cũng chính là lý do tại
+                sao khi đến mùa lúa chín, địa điểm du lịch Lai Châu này lại hot
+                đến vậy.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-3.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đồi chè Tân Uyên – địa điểm du lịch Lai Châu siêu hot
+              </summary>
+              <p class="detail-content">
+                Đến Lai Châu du lịch, bạn không thể bỏ qua đồi chè Tân Uyên, nơi
+                du khách có thể hòa mình vào vùng đất xanh tươi của những đồi
+                chè. Với khung cảnh thiên nhiên tươi tốt và mê hoặc, đây là một
+                trong những điểm du lịch lý tưởng mà du khách không thể bỏ lỡ.
+              </p>
+              <p>
+                Ghé thăm nơi này, du khách có thể tản bộ dọc các con đường dẫn
+                qua đồi, tận hưởng không gian yên tĩnh và ngắm nhìn khung cảnh
+                xung quanh. Đặc biệt, khi mùa chè đang vào khoảnh khắc đẹp nhất,
+                nếu tới địa điểm du lịch Lai Châu này bạn sẽ được chiêm ngưỡng
+                những đám chè đua nhau khoe sắc trên nền cảnh quan xanh tươi.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-4.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Cánh đồng Tam Đường – Một trong các địa điểm du lịch Lai Châu ấn
+                tượng
+              </summary>
+              <p class="detail-content">
+                Một trong những điểm nổi bật nhất của Cánh đồng Tam Đường chính
+                là khung cảnh đẹp đến mê hồn của những luống chè xanh mướt.
+                Không chỉ có các đồi chè, cánh đồng Tam Đường còn được trang trí
+                bởi các con suối nhỏ và cánh đồng ruộng bậc thang đẹp mắt.
+              </p>
+              <p>
+                Ngoài vẻ đẹp tự nhiên, Cánh đồng Tam Đường còn có sự đa dạng về
+                văn hóa dân tộc. Đến địa điểm du lịch Lai Châu này, du khách còn
+                có thể khám phá và tìm hiểu về văn hóa, truyền thống và phong
+                tục của các dân tộc thiểu số. Ngoài ra, bạn cũng có thể giao lưu
+                với các bản địa, thăm nhà dân, và tham quan làng truyền thống.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-5.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Cao nguyên Sìn Hồ
+              </summary>
+              <p class="detail-content">
+                Được coi là nóc nhà của khu du lịch Lai Châu, cao nguyên Sìn Hồ
+                luôn thu hút du khách cả trong lẫn ngoài nước. Khung cảnh hoang
+                sơ với những núi đồi cheo leo và hồ nước trong xanh, từ đó khiến
+                cho bức tranh thiên nhiên trở nên đẹp đến mê hồn.
+              </p>
+              <p>
+                Tới đây, ngoài được ngắm nhìn khung cảnh tuyệt đẹp, du khách còn
+                có cơ hội trải nghiệm và khám phá văn hóa, phong tục của người
+                dân. Bên cạnh đó, bạn cũng có thể tham quan những ngôi làng bản
+                địa, tham gia vào các hoạt động vui chơi, giải trí và chứng kiến
+                các nghi lễ truyền thống.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-6.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Quần thể hang động Pu Sam Cáp – Điểm du lịch Lai Châu hấp dẫn
+              </summary>
+              <p class="detail-content">
+                Nổi tiếng với danh xưng “Vương quốc của những hang động”, Pu Sam
+                Cáp là tập hợp các hang động phong phú và đa dạng về cả hình
+                dáng lẫn kích thước. Khu phức hợp này tọa lạc trên độ cao khoảng
+                1.700m, là nơi nối giữa huyện Sìn Hồ, khu du lịch Lai Châu và
+                huyện Tam Đường.
+              </p>
+              <p>
+                Địa điểm du lịch Lai Châu Hang động Pu Sam Cáp sở hữu khoảng hơn
+                10 hang động nhỏ, nhưng chỉ 3 hang động được du khách biết nhiều
+                nhất gọi là Thiên Môn, Thiên Đường, Thủy Tinh. Mỗi hang đều có
+                nét độc đáo riêng và được so sánh như những người đẹp đang ngủ
+                quên giữa rừng sâu.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-7.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Trái Tim – địa điểm du lịch Lai Châu trữ tình
+              </summary>
+              <p class="detail-content">
+                Thác Trái Tim nổi tiếng với hình dáng độc đáo giống hình trái
+                tim, do đó đã được người dân địa phương đặt theo tên gọi này.
+                Thác có dòng nước chảy mạnh và trắng xóa, tạo ra cảm giác mê
+                hoặc, hùng vĩ. Đây đích thị là một trong các địa điểm du lịch
+                Lai Châu hoàn hảo cho các cặp đôi và những người yêu thiên
+                nhiên.
+              </p>
+              <p>
+                Ngoài ra, địa điểm du lịch Lai Châu thác Trái Tim cũng thu hút
+                nhiều nhiếp ảnh gia và những tín đồ đam mê nhiếp ảnh từ khắp cả
+                nước đến chụp. Ghé thăm nơi này, bạn có thể tận dụng cảnh quan
+                tuyệt đẹp và ánh sáng tự nhiên để chụp những bức ảnh đẹp, độc
+                đáo.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-8.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Địa điểm du lịch Lai Châu – Động Tiên Sơn
+              </summary>
+              <p class="detail-content">
+                Động Tiên Sơn tọa lạc trên một ngọn núi cao trập trùng, được bao
+                quanh bởi cảnh quan tự nhiên hùng vĩ. Đặc biệt, hang động được
+                tạo thành từ sự hòa quyện giữa đá và nước, tạo nên những hình
+                thái lạ mắt và phong cảnh kỳ ảo.
+              </p>
+              <p>
+                Bước vào trong động, du khách sẽ được ngắm nhìn những đường thác
+                nước chảy róc rách và những hốc đá tạo nên một không gian đầy mê
+                hoặc. Bên cạnh đó, địa điểm du lịch Lai Châu này còn có cả những
+                nhánh đường hẹp và hẻm nằm sâu trong hang, tạo ra một không gian
+                màu sắc và ánh sáng huyền bí.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-9.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Cao Nguyên Dào San – Địa điểm du lịch Lai Châu tràn ngập sắc
+                xanh
+              </summary>
+              <p class="detail-content">
+                Tới Lai Châu, du khách không thể bỏ qua Cao Nguyên Dào San, nơi
+                được bao phủ bởi những cánh đồng bậc thang xanh rờn và những
+                rừng thông trùng điệp. Cảnh quan tại cao nguyên thay đổi theo
+                mùa, từ mùa xuân tươi đẹp đến mùa đông lạnh giá khiến bề mặt
+                đồng cỏ phủ một lớp tuyết trắng.
+              </p>
+              <p>
+                Bên cạnh đó, đến đây bạn sẽ bắt gặp nhiều bản làng của người dân
+                tộc thiểu số như H’mông, Dao và các dân tộc khác. Du khách có cơ
+                hội tương tác với cộng đồng địa phương chân chất, thật thà, khám
+                phá văn hóa dân tộc và thưởng thức các món ăn truyền thống trong
+                khu du lịch Lai Châu.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-10.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Thác Tác Tình (Thác Tình)
+              </summary>
+              <p class="detail-content">
+                Thác Tình không chỉ là một trong các địa điểm du lịch Lai Châu
+                đẹp mắt, đây còn là một nguồn cảm hứng vô tận cho những ai yêu
+                thích thiên nhiên. Thác tọa lạc trong lòng vùng núi non trùng
+                điệp, xanh mát, nhìn từ xa, thác Tác Tình tựa như một viên ngọc
+                quý vô giá.
+              </p>
+              <p>
+                Thác có một vẻ đẹp đặc biệt, đó là sức mạnh và âm thanh mê hoặc
+                của những dòng nước mạnh mẽ đổ xuống. Khi nước chảy qua các tầng
+                đá, tạo ra những cơn sóng và bọt nước trắng xóa. Âm thanh của
+                nước rơi và tiếng vang trên dòng sống khiến cho không gian trở
+                nên sống động và hấp dẫn.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-11.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Địa điểm du lịch Lai Châu: Bạch Mộc Lương Tử – Điểm trekking nổi
+                tiếng
+              </summary>
+              <p class="detail-content">
+                Là một trong những ngọn núi cao và hùng vĩ, núi Bạch Mộc Lương
+                Tử nổi bật với khung cảnh thiên nhiên độc đáo và đẹp mắt. Leo
+                lên đỉnh núi, du khách có thể tận hưởng toàn cảnh địa điểm du
+                lịch Lai Châu hùng vĩ và ngắm nhìn những cánh đồng và những con
+                suối trải dài dưới chân.
+              </p>
+              <p>
+                Đặc biệt, đây là một trong các địa điểm du lịch Lai Châu lý
+                tưởng cho các trekker muốn thử sức với những chuyến đi phiêu
+                lưu. Bạn có thể khám phá các con đường mòn ngoằn ngoèo, đi qua
+                rừng rậm và cánh đồng, khai thác những bí ẩn của vùng núi hoang
+                sơ.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-12.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary class="w3-bar-item w3-button w3-padding summary">
+                Đỉnh Pu Si Lung – địa điểm du lịch Lai Châu thu hút
+              </summary>
+              <p class="detail-content">
+                Đỉnh Pu Si Lung sở hữu độ cao lên tới 3.082 mét cùng khung cảnh
+                thiên nhiên hấp dẫn, tuyệt đẹp. Đây là một trong các địa điểm du
+                lịch ở Lai Châu hứa hẹn mang đến cho du khách tổng hợp các trải
+                nghiệm thú vị và thử thách không thể quên.
+              </p>
+              <p>
+                Bên cạnh đó, khu vực quanh đỉnh là nơi nơi sinh sống của các dân
+                tộc bản địa như H’mông, La Hủ, Dao Đỏ. Ghé thăm địa điểm du lịch
+                Lai Châu, du khách có cơ hội gặp gỡ và giao lưu với người dân
+                địa phương. Ngoài ra, bạn cũng có thể khám phá những nét văn hóa
+                độc đáo, phong tục và nếp sống của họ.
+              </p>
+              <figure class="w3-center">
+                <img
+                  src="https://ticotravel.com.vn/wp-content/uploads/2023/07/dia-diem-du-lich-lai-chau-1-13.jpg"
+                  class="w3-container"
+                  alt=""
+                />
+                <figcaption style="font-size: smaller">
+                  (Nguồn thông tin và hình ảnh:
+                  <a
+                    href="https://ticotravel.com.vn/dia-diem-du-lich-lai-chau/"
+                    target="_blank"
+                  >
+                    ticotravel.com.vn </a
+                  >)
+                </figcaption>
+              </figure>
+            </details>
+          </li>
+        </ol>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16 w3-content" id="tiemnang">
+        <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <strong
+              ><mark
+                >Tiềm năng phát triển của Lai Châu sau sáp nhập</mark
+              ></strong
+            >
+          </p>
+
+          <p>
+            Lai Châu là tỉnh có vị trí chiến lược quan trọng về
+            <strong>quốc phòng, an ninh</strong> và phát triển
+            <strong>kinh tế biên mậu</strong> với hơn <u>265 km</u> đường biên
+            giáp Trung Quốc, có <strong>cửa khẩu quốc tế</strong> và nhiều lối
+            mở. Tỉnh sở hữu tài nguyên thiên nhiên phong phú, bao gồm khoáng sản
+            đa dạng (<strong>đất hiếm, khoáng sản công nghiệp, kim loại</strong
+            >), rừng rộng, nguồn nước dồi dào, khí hậu ôn hòa, thuận lợi cho
+            <strong>nông nghiệp, thủy điện</strong> và phát triển
+            <strong>du lịch sinh thái</strong>.
+          </p>
+
+          <p>
+            Văn hóa đa dạng, cảnh quan thiên nhiên hùng vĩ cùng các di sản văn
+            hóa phi vật thể như <strong>Nghệ thuật Xòe Thái</strong> và
+            <strong>Then</strong> tạo tiềm năng lớn cho
+            <strong>du lịch</strong> và <strong>dịch vụ</strong>. Lai Châu có
+            thể phát triển <strong>nông nghiệp hàng hóa tập trung</strong>,
+            <strong>sản phẩm OCOP</strong>, <strong>du lịch sinh thái</strong>,
+            <strong>công nghiệp chế biến nông sản</strong>,
+            <strong>kinh tế cửa khẩu</strong>, <strong>kinh tế xanh</strong> và
+            <strong>kinh tế tuần hoàn</strong>.
+          </p>
+
+          <p>
+            Đảng bộ và chính quyền tỉnh đã đạt nhiều kết quả tích cực về
+            <strong>tăng trưởng kinh tế</strong>, cải thiện
+            <strong>đời sống nhân dân</strong> và giảm nghèo, song vẫn còn những
+            hạn chế về <strong>quy mô kinh tế</strong>,
+            <strong>kết cấu hạ tầng</strong>, <strong>thu hút đầu tư</strong>,
+            <strong>xuất nhập khẩu</strong> và <strong>an ninh</strong>.
+          </p>
+
+          <p>
+            Trong thời gian tới, Lai Châu được định hướng phát triển
+            <strong>nhanh, xanh, bền vững</strong>, tập trung vào: cải thiện
+            <strong>hạ tầng kinh tế - xã hội</strong>, nâng cao năng lực cạnh
+            tranh và môi trường đầu tư, phát triển
+            <strong>nông nghiệp công nghệ cao</strong>,
+            <strong>du lịch chất lượng cao</strong>,
+            <strong>công nghiệp chế biến</strong> và
+            <strong>kinh tế biên mậu</strong>, đồng thời bảo vệ
+            <strong>môi trường, văn hóa, an sinh xã hội</strong> và nâng cao đời
+            sống người dân, đặc biệt là đồng bào dân tộc thiểu số.
+          </p>
+        </article>
+        <p style="font-size: 15px" class="w3-center">
+          (Nguồn thông tin:
+          <a
+            href="https://baochinhphu.vn/lai-chau-uu-tien-phat-trien-kinh-te-nong-nghiep-cua-khau-102231229151702116.htm#:~:text=Th%C3%B4ng%20b%C3%A1o%20n%C3%AAu%3A%20T%E1%BB%89nh%20Lai%20Ch%C3%A2u%20c%C3%B3%20v%E1%BB%8B,m%E1%BA%A1i%2C%20xu%E1%BA%A5t%20nh%E1%BA%ADp%20kh%E1%BA%A9u%2C%20kinh%20t%E1%BA%BF%20c%E1%BB%ADa%20kh%E1%BA%A9u."
+            target="_blank"
+            >baochinhphu.vn</a
+          >)
+        </p>
+      </section>
+      <hr />
+    </main>
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("w3-hide");
+      }
+    </script>
+  </body>
+</html>
